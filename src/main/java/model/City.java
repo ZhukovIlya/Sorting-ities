@@ -1,0 +1,57 @@
+package model;
+
+public class City {
+    private String name;
+    private String region;
+    private String district;
+    private int population;
+    private String foundation;
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public City(String name, String region, String district, int population, String foundation) {
+        this.name = name;
+        this.region = region;
+        this.district = district;
+        this.population = population;
+        this.foundation = foundation;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString(){
+        return "City{ name='" + name + "', region='" + region
+                + "', district='" + district + "', population='" + population
+                + "', foundation='" + foundation + "'";
+    }
+
+}
